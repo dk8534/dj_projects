@@ -1,0 +1,15 @@
+project:1
+
+movie_project = based on django model form and retrive data ORM Query set
+
+                add movie: django model form
+                movie list: retrive ORM Query set
+
+project:2
+
+news_project = based on template inheritence(advance template features)
+
+project:3
+
+
+
