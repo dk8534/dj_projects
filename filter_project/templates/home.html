@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+</head>
+<body>
+    <h1> Django Template Filter</h1>
+    <h3>The popularity and usefulness of template filters can vary depending on the specific requirements of your Django project. However, here are some of the most commonly used and versatile template filters in Django: <br>
+
+        1.date: Formats a date or datetime object.<br>
+        2.default: Sets a default value for variables that are not defined or evaluate to False.<br>
+        3.escape: Escapes characters for use in HTML.<br>
+        4.filesizeformat: Formats the value as a human-readable file size.<br>
+         5.linebreaksbr: Converts line breaks in plain text into HTML line breaks <!--(<br>) -->, preserving multiple line breaks.<br>
+        6.lower: Converts a string to lowercase.<br>
+        7.pluralize: Returns a plural suffix if the value is not 1.<br>
+        8.slice: Slices a list or string.<br>
+        9.striptags: Removes HTML tags from the value.<br>
+        10.title: Converts the value to title case.<br>
+        11.truncatechars: Truncates a string to a specified number of characters.<br>
+        12.truncatewords: Truncates a string to a specified number of words.<br>
+        13.upper: Converts a string to uppercase.</h3>
+    {% for i in obj %}
+    <ul>    
+        <li><h1>Name: {{i.name | upper}}</h1></li>
+        <li><h1>Address: {{i.address | lower}}</h1></li>
+        <h2>#########################</h2>
+    </ul>
+    {% endfor %}
+</body>
+</html>
