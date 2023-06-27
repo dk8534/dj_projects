@@ -7,15 +7,16 @@
     <title>home page</title>
 </head>
 <body>
+    {% load coust_tag %}
     <h1> Django Template Filter</h1>
     <img src="{% static 'images/img1.jpg' %} " alt="image not found">
 <p>Note: There are tons of built in filters are available.</p>
 <a href="https://docs.djangoproject.com/en/4.2/ref/templates/builtins/#built-in-filter-reference">Learn this documentation</a>
-    {% load coust_filter %}
+    
     {% for i in obj %}
     <ul>    
         <li><h1>Name: {{i.name | upper}}</h1></li>
-        <li><h1>father: {{i.father | f4upper}}</h1></li>
+        <li><h1>father: {{i.father | ffcu }}</h1></li>
         <li><h1>mother: {{i.mother | title}}</h1></li>
         <li><h1>Address: {{i.occupation | add:" is my occupation or post..."}}</h1></li>
         <li><h1>DOB: {{i.DOB | date:"Y-m-d"}}</h1></li>
@@ -24,3 +25,5 @@
     {% endfor %}
 </body>
 </html>
+
+
